@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{
+	padding:0;
+	margin:0;	
+}
+
+.parallax-window{
+	min-height: 300px;
+}
+
+#about,#s4{
+	min-height: 600px;
+	position: relative;
+}
+
+.banner,.bannerdown{
+	background: #f19392;
+	padding: 20px;
+	box-shadow: 2px 2px 8px #d4d4d4;
+	
+	-webkit-animation-name: ant;/*Safari 4.0 - 8.0*/
+	animation-name: ant;
+	-webkit-animation-duration: 3s;/*Safari 4.0 - 8.0*/
+	animation-duration: 3s;
+	-webkit-animation-iteration-count: 1;/*Safari 4.0 - 8.0*/
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease;/*Safari 4.0 - 8.0*/
+	animation-timing-function: ease;
+}
+
+.banner{
+	margin: 0 0 80px;
+}
+
+@keyframes ant{
+	from {transform: rotate(-90deg);background:#fff;}
+	to {transform: rotate(0deg); background:#f19392;}
+}
+
+.bannerdown{
+	margin: 80px 0 0px;
+}
+
+.banner h3,.bannerdown h3{
+	margin: 0;
+	color: #fff;
+}
+.banner p,.bannerdown p{
+	color: #fff;
+	text-align: justify;
+}
+
+.other{
+    min-height: 600px;
+    background: #eef7f7;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	position: relative;
+}
+
+.other::after {
+    content: "";
+    width: 100%;
+    height: 180px;
+    position: absolute;
+	left: 0;
+	bottom: -180px;
+	background-image: url(../img/花.png);
+	z-index: 200;
+}
+
+.other::before{
+    content: "";
+    width: 100%;
+    height: 56px;
+    position: absolute;
+	left: 0;
+	top: -56px;
+	transform: rotate(-180deg);
+    background-image: url(../img/wave2.png);
+}
+
+h3{
+	color:#3a4998;
+	font-size:60pt;
+	margin:0 auto 20px;
+	text-align: center;
+}
+
+p{
+	font-family:'Noto Sans TC';
+	color:#3a4998;
+	font-weight: 300;
+	font-size: 12pt;
+	margin: 0 0 1em 0;
+	padding: 0;
+	letter-spacing: 1pt;
+}
+
+.gogo{
+	position: relative;
+}
+
+
+.gor{
+	position: absolute;
+	right: 5%;
+	bottom: 0;
+    width: 80px;
+}
+
+.gor img{
+	width: 100%;
+	transition: 0.3s;
+}
+
+.gor img:hover{
+	transform: translateX(5px);
+}
+
+footer{	
+	bottom:0;
+	width:100%;
+	text-align:center;
+	z-index:3000;
+	color:#fff;
+	background-color: rgba(236,114,118,0.8);
+	padding: 10px 0 12px;
+}
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+
+	#about{
+		min-height: 300px;
+	}
+}
+
+/*for desktop*/
+@media only screen and (min-width: 1200px) {
+	h3{
+		margin-top: 80px;
+		text-align: left;
+	}
+	.banner,.bannerdown{
+		margin-top: 80px;
+	}
+
+}

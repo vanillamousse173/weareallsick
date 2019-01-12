@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900');
+
+body{
+	flex-direction: column; /*由上至下排列*/
+	min-height:100vh;
+	/*可大於但不可小於 整個瀏覽器可視範圍*/
+	margin:0;
+	display: flex; /*為了使footer置底*/
+}
+
+section{
+	display: block;
+	font-family:'Noto Sans TC',"微軟正黑體";
+	position: relative;
+	width: 80%;
+	margin: 60px auto;
+}
+
+.box{
+	min-height: 330px;
+	position: relative;
+	color: #3a4998;
+	display: inline-block;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	margin: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.box:hover{	
+	color: #66c3eb;
+	box-shadow: 2px 2px 8px #ec7276;
+	transition: color 1s;
+}
+
+.imgbox2{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.box img{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.box h3{
+	box-sizing: border-box;
+	padding: 0px 20px;
+	font-size: 12pt;
+	font-weight: 500;
+}
+
+footer{	
+	bottom:0;
+	width:100%;
+	text-align:center;
+	z-index:3000;
+	color:#fff;
+	background-color: rgba(236,114,118,0.8);
+	padding: 10px 0 12px;
+	bottom: 0;
+}
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+	nav{
+		display: block;
+	}
+
+	nav ul li{
+		display: inline-block;
+	}
+
+	.menu,header::after{
+		display: none;
+	}
+
+	#imgbox img{
+		width: 50%;
+	}
+}
+
+/*for desktop*/
+@media only screen and (min-width: 1200px) {
+	#imgbox img{
+		width: 33.33%;
+	}
+
+	nav ul li{
+		border-bottom:none;
+	}
+
+	header::after{
+		display: none;
+	}
+}

@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("rwd.css");
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+html, body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+}
+
+/* header */
+
+header{
+	padding:15px 0px;
+	color:#fff;
+	background: #063;
+	text-align:center;
+	position:relative;
+}
+
+.menu{
+	display:block;
+	position:absolute;
+	width:30px;
+	height:30px;
+	background:url(../images/menu.png);
+	right:20px;
+	top:20px;
+}
+
+.menu:hover{
+	cursor:pointer;
+}
+
+/* nav */
+
+nav{
+	margin:auto;
+	text-align:center;
+	display: none;
+}
+
+nav ul{
+	margin:0;
+}
+
+nav ul li{
+	display: block;
+	border-bottom:solid #fff 1px;
+}
+
+nav ul li a{
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	width:100%;
+	padding:15px 30px;
+}
+
+nav ul li a:hover{
+	background:#C90;
+}
+
+/* div */
+
+p{
+	padding:10px;
+	background:#CCC;	
+}
+
+#imgbox img{
+	float:left;
+	width:100%;
+	padding:5px;
+}
+
+/* footer */
+
+footer{
+	text-align:center;
+	padding:20px;
+}
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+	nav{
+		display: block;
+	}
+
+	nav ul li{
+		display: inline-block;
+		border-bottom:none;
+	}
+
+	.menu{
+		display: none;
+	}
+
+	#imgbox img{
+		width: 50%;
+	}
+}
+
+/*for desktop*/
+@media only screen and (min-width: 1200px) {
+
+	#imgbox img{
+		width: 50%;
+	}
+
+	nav ul li{
+		border-bottom:none;
+	}
+}

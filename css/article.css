@@ -1,0 +1,117 @@
+@charset "utf-8";
+/*CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900');
+
+body{
+	flex-direction: column; /*由上至下排列*/
+	min-height:100vh;
+	/*可大於但不可小於 整個瀏覽器可視範圍*/
+	margin:0;
+	background: #eef7f7;
+	display: flex; /*為了使footer置底*/
+}
+
+section{
+	display: block;
+	font-family:'Noto Sans TC',"微軟正黑體";
+	position: relative;
+	width: 80%;
+	margin: 20px auto;
+}
+
+.pic{
+	text-align: center;
+}
+
+.pic img{
+	width:100%;
+}
+
+p{
+	color: #3a4998;
+	font-weight: 300;
+	font-size: 12pt;
+	margin-bottom: 2em; 
+	padding: 0;
+	letter-spacing: 1pt;
+	-webkit-writing-mode: vertical-lr;
+	writing-mode: vertical-lr ;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+}
+
+span{
+	color: #3a4998;
+	font-weight: 500;
+	font-size: 18pt;
+	text-align: right;
+}
+
+.paragraph{
+	overflow-x: auto;
+	position: relative;
+	margin-bottom:120px;
+	direction: rtl;
+}
+.paragraph p {
+	direction: ltr;
+}
+
+/*scrollbar*/
+
+/*定義滾動條寬高及背景
+ 寬高分别對應横豎滚動條的尺寸*/
+ .paragraph::-webkit-scrollbar{
+	
+    width:5px;
+    height:5px;
+	}
+
+/*定義滾動條軌道
+ 內陰影+圓角*/
+ .paragraph::-webkit-scrollbar-track{
+	position: absolute;
+	top: 100;
+    background-color:#f19392;
+	}
+
+/*定義滑塊
+ 内陰影+圓角*/
+ .paragraph::-webkit-scrollbar-thumb
+	{
+	 width:10px;
+    background-color:#3a4998;
+	}
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+	nav{
+		display: block;
+	}
+
+	nav ul li{
+		display: inline-block;
+	}
+
+	.menu,header::after{
+		display: none;
+	}
+
+}
+
+/*for desktop*/
+@media only screen and (min-width: 1200px) {
+
+	nav ul li{
+		border-bottom:none;
+	}
+
+	header::after{
+		display: none;
+	}
+
+	.paragraph{
+		margin: 60px 0 0 0;
+	}
+}
