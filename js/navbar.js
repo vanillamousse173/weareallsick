@@ -1,7 +1,7 @@
 // JavaScript Document
 $(document).ready(function(){
 	$(window).resize(function(){
-		location.reload();
+		// location.reload();
 	});
 
 	var pn = $("body").data("pagenum");
