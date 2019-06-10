@@ -83,13 +83,25 @@ input {
     top: 45%;
 }
 
-.button>img{
+a>img{
     width: 100%;
 }
 
-.button>a{
-    display: block;
+a{
+    display:block;
     width: 60px;
+    cursor:pointer;
+}
+
+.cha{
+    width: 100px;
+    position: absolute;
+    top: 45%;
+    right:30px;
+}
+
+.cha>img{
+    width: 100%;
 }
 
 footer{
