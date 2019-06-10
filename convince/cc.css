@@ -8,39 +8,56 @@ html,body{
     scroll-behavior: smooth;
 }
 
-.za{
+header{
     width: 100%;
-    background-image: url("05.png");
+    position: relative;
 }
 
-.za>img{
+.title,.tbg{
     width: 100%;
+}
+
+.title>img{
+    width: 95%;
+}
+
+.tbg>img{
+    width: 100%;
+}
+
+.title{
+    position: absolute;
+    text-align: center;
+    top:5px;
+    z-index: 100;
+}
+
+.tbg{
+    position: absolute;
+    top:0;
 }
 
 .bg{
     width: 100%;
-    position: absolute;
 }
 
 .bg>img{
     width: 100%;
-    filter:sepia(30%);
-    z-index: -100;
 }
 
+
 .dialogue{
-    background: #fff666;
-    padding: 5px 20px;
-    width: 100%;
-	margin:0;
+    background: #feffea;
+    bottom: 120px;
+    padding: 5px 10px;
+    font-size: 15px;
+    position: fixed;
+    z-index: 50;
 }
 
 footer{
-    width: 100%;
     position: fixed;
-    padding:0;
-	margin:0;
-    bottom: -50px;
+    width: 100%;
 }
 
 footer>img{
