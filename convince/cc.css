@@ -48,16 +48,18 @@ header{
 
 .dialogue{
     background: #feffea;
-    bottom: 120px;
-    padding: 5px 10px;
-    font-size: 15px;
+    bottom: 50px;
+    padding: 10px 25px;
+    font-size: 20px;
+    line-height: 35px;
     position: fixed;
     z-index: 50;
 }
 
 footer{
-    position: fixed;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 footer>img{
