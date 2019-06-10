@@ -1,2 +1,48 @@
 @charset "utf-8";
 /* CSS Document */
+
+html,body{
+	font-family:'Nanum Brush Script','Noto Sans TC',"微軟正黑體";
+	padding:0;
+	margin:0;
+    scroll-behavior: smooth;
+}
+
+.za{
+    width: 100%;
+    background-image: url("05.png");
+}
+
+.za>img{
+    width: 100%;
+}
+
+.bg{
+    width: 100%;
+    position: absolute;
+}
+
+.bg>img{
+    width: 100%;
+    filter:sepia(30%);
+    z-index: -100;
+}
+
+.dialogue{
+    background: #fff666;
+    padding: 5px 20px;
+    width: 100%;
+	margin:0;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    padding:0;
+	margin:0;
+    bottom: -50px;
+}
+
+footer>img{
+    width: 100%;
+}
