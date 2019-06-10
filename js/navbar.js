@@ -1,8 +1,8 @@
 // JavaScript Document
 $(document).ready(function(){
-	$(window).resize(function(){
-		// location.reload();
-	});
+	// $(window).resize(function(){
+	// 	location.reload();
+	// });
 
 	var pn = $("body").data("pagenum");
 	$("nav li>a").eq(pn).addClass("ch_bg");
