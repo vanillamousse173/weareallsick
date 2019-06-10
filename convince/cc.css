@@ -38,7 +38,6 @@ header{
 }
 
 .bg{
-    position: absolute;
     top:50px;
     width: 100%;
     z-index: -100;
@@ -48,6 +47,32 @@ header{
     width: 100%;
 }
 
+.discount{
+    height: 700px;
+    position: absolute;
+    top:0;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 100px 15px 10px 15px;
+    z-index: 1000;
+}
+
+.discount>p{
+    text-align: center;
+}
+
+.discount>img{
+    margin-bottom: 10px;
+    width: 50%;
+    transform: translateX(50%);
+}
+
+.discount>a{
+    text-decoration: none;
+    color: #ff6e9e;
+    margin: 0 auto;
+    padding-left: 20px;
+}
 
 .dialogue{
     background: #ff6e9e;
